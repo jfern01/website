@@ -1,0 +1,18 @@
+<template>
+    <DefaultLayout>
+        <Header title="404"></Header>
+    </DefaultLayout>
+</template>
+
+<script>
+import Header from '~/components/Header.vue';
+
+export default {
+    components: {
+        Header,
+    },
+    metaInfo: {
+        title: 'Not found'
+    }
+};
+</script>
