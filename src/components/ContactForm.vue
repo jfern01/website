@@ -9,6 +9,7 @@
                     <div class="bg-white rounded text-center p-5 shadow-down">
                         <h4 class="mb-80">Contact Form</h4>
                         <form name="contact" method="post" class="row" data-netlify="true" data-netlify-honeypot="bot-field">
+                            <input type="hidden" name="form-name" value="contact-form" />
                             <p hidden>
                                 <label>Don’t fill this out: <input name="bot-field" /></label>
                             </p>
