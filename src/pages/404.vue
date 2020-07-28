@@ -1,6 +1,8 @@
 <template>
     <DefaultLayout>
-        <Header title="404"></Header>
+        <Header>
+            <h1 class="text-white font-tertiary">404</h1>
+        </Header>
     </DefaultLayout>
 </template>
 

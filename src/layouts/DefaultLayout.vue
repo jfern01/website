@@ -2,7 +2,9 @@
     <div class="layout">
         <header class="navigation fixed-top" v-scroll="handleScroll" :class="{ 'nav-bg': stickyHeader }">
             <nav class="navbar navbar-dark navbar-expand-lg">
-                <g-link class="navbar-brand font-tertiary h3" to="/">JF</g-link>
+                <g-link class="navbar-brand font-tertiary h3" to="/">
+                    <g-image src="~/assets/images/logo/default.svg" width="65px" />
+                </g-link>
 
                 <BNavbarToggle target="navigation" />
 
@@ -17,9 +19,6 @@
                         <li class="nav-item">
                             <g-link class="nav-link" to="/blog/">Blog</g-link>
                         </li>
-                        <!-- <li class="nav-item">
-                            <g-link class="nav-link" to="/portfolio/">Portfolio</g-link>
-                        </li> -->
                     </ul>
                 </BCollapse>
             </nav>

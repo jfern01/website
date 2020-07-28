@@ -19,9 +19,9 @@
                             <div class="text-white mb-4 content" v-html="testimonial.node.content"></div>
                             <a v-bind:href="testimonial.node.authorUrl">
                                 <g-image
-                                    v-if="testimonial.node.imageUrl"
+                                    v-if="testimonial.node.authorPhoto"
                                     class="img-fluid rounded-circle mb-4 d-inline-block"
-                                    :src="testimonial.node.imageUrl"
+                                    :src="testimonial.node.authorPhoto"
                                     alt="client-image"
                                     width="75"
                                 />
@@ -52,7 +52,7 @@
                     title
                     content
                     authorUrl
-                    imageUrl
+                    authorPhoto
                 }
             }
         }

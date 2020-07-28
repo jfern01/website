@@ -8,6 +8,7 @@
 module.exports = {
     siteUrl: 'https://josefernandez.dev',
     siteName: 'Jose Fernandez',
+    icon: './src/assets/images/logo/favicon.png',
     plugins: [
         {
             use: '@gridsome/plugin-google-analytics',
@@ -17,6 +18,17 @@ module.exports = {
         },
         {
             use: '@gridsome/plugin-sitemap',
+        },
+        {
+            use: 'gridsome-plugin-manifest',
+            options: {
+                background_color: '#41228e',
+                icon_path: './src/assets/images/logo/favicon.png',
+                name: 'Jose Fernandez',
+                short_name: 'JF',
+                theme_color: '#FFFFFF',
+                lang: 'en',
+            },
         },
         {
             use: '@gridsome/source-filesystem',

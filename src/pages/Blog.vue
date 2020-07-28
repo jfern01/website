@@ -1,6 +1,8 @@
 <template>
     <DefaultLayout>
-        <Header title="Blog"></Header>
+        <Header>
+            <h1 class="text-white font-tertiary">Blog</h1>
+        </Header>
 
         <section class="section blogs-area">
 
