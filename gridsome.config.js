@@ -10,6 +10,15 @@ module.exports = {
     siteName: 'Jose Fernandez',
     plugins: [
         {
+            use: '@gridsome/plugin-google-analytics',
+            options: {
+                id: 'UA-157807213-2'
+            }
+        },
+        {
+            use: '@gridsome/plugin-sitemap',
+        },
+        {
             use: '@gridsome/source-filesystem',
             options: {
                 typeName: 'Testimonial',
