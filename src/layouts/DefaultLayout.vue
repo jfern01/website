@@ -24,7 +24,11 @@
             </nav>
         </header>
 
-        <slot/>
+        <transition name="fade" appear>
+            <main>
+                <slot/>
+            </main>
+        </transition>
 
         <ContactForm />
 
@@ -92,6 +96,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.fade-enter-active {
+    transition: opacity .5s;
+}
+
+.fade-enter {
+    opacity: 0;
+}
+
 footer {
     padding-top: 200px;
 }

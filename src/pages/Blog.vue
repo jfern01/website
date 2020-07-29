@@ -19,14 +19,13 @@
                         </div>
                     </article>
                 </masonry>
-                <!-- <div class="row">
+                <div class="row">
                     <div class="col-12 text-center">
                         <div v-if="!$page.posts.edges.length" class="alert alert-warning" role="alert">
                             No posts yet. Check back soon!
                         </div>
                     </div>
-                </div> -->
-                <Pager :info="$page.posts.pageInfo" link-class="page-item" />
+                </div>
                 <BPaginationNav
                     v-model="$page.posts.pageInfo.currentPage"
                     align="center"
@@ -78,7 +77,7 @@ export default {
             colSettings: {
                 default: 3,
                 992: 2,
-                500: 1,
+                767: 1,
             }
         };
     },
