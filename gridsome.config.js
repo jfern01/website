@@ -31,15 +31,36 @@ module.exports = {
             }
         },
         {
-            use: 'gridsome-plugin-manifest',
+            use: 'gridsome-plugin-pwa',
             options: {
-                background_color: '#41228e',
-                icon_path: './src/assets/images/logo/favicon.png',
-                name: 'Jose Fernandez',
-                short_name: 'JF',
-                theme_color: '#FFFFFF',
-                lang: 'en',
-            },
+                // Service Worker Options
+                disableServiceWorker: false,
+                serviceWorkerPath: 'service-worker.js',
+                cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg,gif',
+                disableTemplatedUrls: false,       // Optional
+    
+                // Manifest Options (https://developer.mozilla.org/en-US/docs/Web/Manifest)
+                manifestPath: 'manifest.json',
+                title: 'Jose Fernandez',
+                startUrl: '/',
+                display: 'standalone',
+                statusBarStyle: 'default',
+                themeColor: '#41228e',
+                backgroundColor: '#41228e',
+                icon: './src/assets/images/logo/favicon.png',
+                shortName: 'JF',              // Optional
+                maskableIcon: true,                 // Optional
+    
+                // Standard Meta Tags
+                svgFavicon: './src/assets/images/logo/default/favicon.svg',
+    
+                // Microsoft Windows Meta Tags
+                msTileColor: '#41228e',             // Optional
+    
+                // Apple MacOS Meta Tags
+                appleMaskIcon: 'favicon.svg',       // Optional
+                appleMaskIconColor: '#41228e',      // Optional
+            }
         },
         {
             use: '@gridsome/source-filesystem',

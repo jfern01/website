@@ -15,6 +15,7 @@
     "bootstrap": "^4.5.0",
     "bootstrap-vue": "^2.15.0",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-pwa": "0.0.18",
     "typeface-playfair-display": "^1.1.4",
     "typeface-roboto": "0.0.75",
     "vue": "^2.6.11",
@@ -27,7 +28,6 @@
     "eslint": "^7.4.0",
     "eslint-plugin-gridsome": "^1.5.0",
     "eslint-plugin-vue": "^6.2.2",
-    "gridsome-plugin-manifest": "^0.3.5",
     "node-sass": "^4.14.1",
     "sass-loader": "^9.0.2"
   }
