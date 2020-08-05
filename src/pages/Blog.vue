@@ -10,7 +10,6 @@
                 <masonry :cols="colSettings" :gutter="30">
                     <article class="card shadow mb-4" v-for="post in $page.posts.edges" :key="post.node.id">
                         <g-image v-if="post.node.thumbnail" class="rounded card-img-top" :src="post.node.thumbnail" alt="post-thumb" />
-                        <g-image v-else class="rounded card-img-top" src="~/assets/images/logo/placeholder.png" alt="post-thumb" />
                         <div class="card-body">
                             <h4 class="card-title">
                                 <g-link class="text-dark" :to="post.node.path">{{ post.node.title }}</g-link>
@@ -52,7 +51,7 @@
                     id
                     title
                     thumbnail(width: 400, height: 295)
-                    excerpt
+                    excerpt(length: 80)
                     date
                     path
                 }

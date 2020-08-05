@@ -3,7 +3,7 @@ author: Jose Fernandez
 title: First post!
 date: 2020-08-04
 excerpt: Obligatory first post to celebrate the launch of my new site.
-# thumbnail: ./images/post-1.jpg
+thumbnail: ../../src/assets/images/logo/placeholder.png
 ---
 **This is the obligatory first post to celebrate the launch of my new portfolio site and blog.**
 
