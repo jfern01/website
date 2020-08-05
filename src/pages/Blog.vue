@@ -1,7 +1,7 @@
 <template>
     <DefaultLayout>
         <Header>
-            <h1 class="text-white font-tertiary">Blog</h1>
+            <h1 class="text-white font-tertiary display-3">Blog</h1>
         </Header>
 
         <section class="section blogs-area">
@@ -9,7 +9,8 @@
             <div class="container">
                 <masonry :cols="colSettings" :gutter="30">
                     <article class="card shadow mb-4" v-for="post in $page.posts.edges" :key="post.node.id">
-                        <g-image class="rounded card-img-top" :src="post.node.thumbnail" alt="post-thumb" />
+                        <g-image v-if="post.node.thumbnail" class="rounded card-img-top" :src="post.node.thumbnail" alt="post-thumb" />
+                        <g-image v-else class="rounded card-img-top" src="~/assets/images/logo/placeholder.png" alt="post-thumb" />
                         <div class="card-body">
                             <h4 class="card-title">
                                 <g-link class="text-dark" :to="post.node.path">{{ post.node.title }}</g-link>
@@ -62,14 +63,12 @@
 
 <script>
 import Header from '~/components/Header.vue';
-import { Pager } from 'gridsome';
 import { BPaginationNav } from 'bootstrap-vue';
 
 export default {
     name: 'Blog',
     components: {
         Header,
-        Pager,
         BPaginationNav
     },
     data () {

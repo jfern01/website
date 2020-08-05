@@ -1,5 +1,5 @@
 <template>
-    <section class="page-title bg-primary position-relative">
+    <section class="header-component bg-primary position-relative">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -7,22 +7,20 @@
                 </div>
             </div>
         </div>
-        <g-image src="~/assets/images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100" />
-        <g-image src="~/assets/images/illustrations/leaf-pink-round.png" alt="illustrations" class="bg-shape-2" />
-        <g-image src="~/assets/images/illustrations/dots-cyan.png" alt="illustrations" class="bg-shape-3" />
-        <g-image src="~/assets/images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4" />
-        <g-image src="~/assets/images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-5" />
-        <g-image src="~/assets/images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-6" />
-        <g-image src="~/assets/images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-7" />
+        <g-image src="~/assets/images/illustrations/page-title.png" alt="illustrations" id="header-bg-shape-1" class="position-absolute w-100" />
+        <g-image src="~/assets/images/illustrations/leaf-pink-round.png" alt="illustrations" id="header-bg-shape-2" class="position-absolute" />
+        <g-image src="~/assets/images/illustrations/dots-cyan.png" alt="illustrations" id="header-bg-shape-3" class="position-absolute" />
+        <g-image src="~/assets/images/illustrations/leaf-orange.png" alt="illustrations" id="header-bg-shape-4" class="position-absolute" />
+        <g-image src="~/assets/images/illustrations/leaf-yellow.png" alt="illustrations" id="header-bg-shape-5" class="position-absolute" />
+        <g-image src="~/assets/images/illustrations/dots-group-cyan.png" alt="illustrations" id="header-bg-shape-6" class="position-absolute" />
+        <g-image src="~/assets/images/illustrations/leaf-cyan-lg.png" alt="illustrations" id="header-bg-shape-7" class="position-absolute" />
     </section>
 </template>
 
 <script>
 export default {
     name: 'Header',
-    props: {
-        title: String,
-    },
+    props: {},
     data () {
         return {};
     },
@@ -31,56 +29,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.page-title {
-    padding: 250px 0 150px;
-
-    .container {
-        position: relative;
-        z-index: 1;
-    }
-
-    .bg-shape-1 {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-    }
-
-    .bg-shape-2 {
-        position: absolute;
-        left: -20px;
-        top: -10px;
-    }
-
-    .bg-shape-3 {
-        position: absolute;
-        left: 10%;
-        top: 100px;
-    }
-
-    .bg-shape-4 {
-        position: absolute;
-        left: 50%;
-        top: -20px;
-    }
-
-    .bg-shape-5 {
-        position: absolute;
-        left: 90px;
-        bottom: -50px;
-        transform: rotate(180deg);
-    }
-
-    .bg-shape-6 {
-        position: absolute;
-        right: 20%;
-        bottom: -20px;
-    }
-
-    .bg-shape-7 {
-        position: absolute;
-        right: -220px;
-        bottom: -100px;
-    }
-}
+@import '../assets/scss/components/header.scss';
 </style>

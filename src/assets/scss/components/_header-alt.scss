@@ -1,0 +1,53 @@
+@import '../variables';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+
+.header-alt-component {
+    @include media-breakpoint-down(lg) {
+        padding: 140px 0 70px;
+        text-align: center;
+
+        img {
+            display: none;
+        }
+    }
+
+    padding: 350px 0 70px;
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    #header-alt-bg-shape-1 {
+        left: 0;
+        top: 0;
+    }
+
+    #header-alt-bg-shape-2 {
+        left: 70px;
+        top: 100px;
+    }
+
+    #header-alt-bg-shape-3 {
+        left: 30%;
+        top: 50px;
+        transform: rotate(180deg);
+    }
+
+    #header-alt-bg-shape-4{
+        left: 100px;
+        bottom: 100px;
+    }
+
+    #header-alt-bg-shape-5 {
+        left: 40%;
+        bottom: -25px;
+    }
+
+    #header-alt-bg-shape-6 {
+        bottom: 100px;
+        right: -100px;
+    }
+}

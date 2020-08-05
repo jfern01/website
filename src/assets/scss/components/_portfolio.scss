@@ -1,41 +1,48 @@
-.hover-wrapper {
-    overflow: hidden;
-    
-    img {
-        transition: .3s ease;
-        transform: scale(1.1);
-    }
-    
-    &:hover {
+@import '../variables';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+
+.portfolio-component {
+    .hover-wrapper {
+        overflow: hidden;
+        
         img {
-            transform: scale(1);
+            transition: .3s ease;
+            transform: scale(1.1);
         }
         
-        .hover-overlay {
-            opacity: 1;
-            visibility: visible;
+        &:hover {
+            img {
+                transform: scale(1);
+            }
+            
+            .hover-overlay {
+                opacity: 1;
+                visibility: visible;
+            }
         }
     }
-}
-
-.hover-overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: inherit;
-    top: 0;
-    left: 0;
-    background: rgba($color: $black, $alpha: .3);
-    opacity: 0;
-    visibility: hidden;
-    transition: .3s ease;
-}
-
-.hover-content {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    right: 0;
-    text-align: center;
+    
+    .hover-overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        border-radius: inherit;
+        top: 0;
+        left: 0;
+        background: rgba($color: $black, $alpha: .3);
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s ease;
+    }
+    
+    .hover-content {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
 }

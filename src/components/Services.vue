@@ -1,5 +1,5 @@
 <template>
-    <section class="section services-area">
+    <section class="services-component section">
         <div class="container">
             <div class="row">
             <div class="col-12 text-center">
@@ -51,5 +51,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+@import '../assets/scss/components/services.scss';
 </style>

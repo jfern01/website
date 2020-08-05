@@ -1,24 +1,10 @@
-// Bootstrap variable overrides
-$theme-colors: (
-    "primary":    #41228e,
-    "secondary":  #2bfdff,
-    "success":    #5eba00,
-    "info":       #45aaf2,
-    "warning":    #f1c40f,
-    "danger":     #cd201f
-);
+@import 'variables';
 
 @import 'node_modules/bootstrap/scss/bootstrap';
 @import 'node_modules/bootstrap-vue/src/index.scss';
 @import 'node_modules/vue-slick-carousel/dist/vue-slick-carousel';
 
-@import 'variables';
 @import 'typography';
 @import 'buttons';
 @import 'common';
 @import 'navigation';
-@import 'components/hero';
-@import 'components/skills';
-@import 'components/services';
-@import 'components/portfolio';
-@import 'components/testimonials';

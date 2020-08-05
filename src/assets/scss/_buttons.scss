@@ -32,20 +32,20 @@
 }
 
 .btn-primary {
-    background: $primary-color;
+    background: $primary;
     color: $white;
     
     &:active {
-        background: lighten($color: $primary-color, $amount: 10) !important;
+        background: lighten($color: $primary, $amount: 10) !important;
     }
     
     &:hover {
-        background: lighten($color: $primary-color, $amount: 10);
+        background: lighten($color: $primary, $amount: 10);
     }
     
     &.focus,
     &.active {
-        background: lighten($color: $primary-color, $amount: 10) !important;
+        background: lighten($color: $primary, $amount: 10) !important;
         box-shadow: none !important;
     }
 }
@@ -53,11 +53,11 @@
 
 .btn-transparent {
     background: transparent;
-    color: $primary-color;
+    color: $primary;
     font-weight: bold;
     
     &:active,
     &:hover {
-        color: $primary-color;
+        color: $primary;
     }
 }

@@ -1,6 +1,12 @@
-.hero-area {
+@import '../variables';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
+
+.hero-component {
     padding: 300px 0 200px;
     position: relative;
+    
     @include media-breakpoint-down(md) {
         padding: 250px 0 150px;
         overflow: hidden;

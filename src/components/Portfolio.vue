@@ -1,9 +1,9 @@
 <template>
-    <section class="section portfolio-area">
+    <section class="portfolio-component section">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="section-title">Portfolio</h2>
+                    <h2 class="section-title display-4">Portfolio</h2>
                 </div>
             </div>
             <masonry :cols="colSettings" :gutter="30">
@@ -13,6 +13,26 @@
                         <div class="hover-overlay">
                             <div class="hover-content">
                                 <a class="btn btn-light btn-sm" href="https://danosseasoning.com/" target="_blank">view project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="position-relative rounded hover-wrapper">
+                        <g-image src="~/assets/images/portfolio/optics-owl.png" alt="portfolio-image" class="img-fluid rounded w-100" />
+                        <div class="hover-overlay">
+                            <div class="hover-content">
+                                <a class="btn btn-light btn-sm" href="https://opticsowl.com" target="_blank">view project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <div class="position-relative rounded hover-wrapper">
+                        <g-image src="~/assets/images/portfolio/goodwill.png" alt="portfolio-image" class="img-fluid rounded w-100" />
+                        <div class="hover-overlay">
+                            <div class="hover-content">
+                                <a class="btn btn-light btn-sm" href="https://www.goodwillky.org/find-a-goodwill-ky-store/" target="_blank">view project</a>
                             </div>
                         </div>
                     </div>
@@ -49,5 +69,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+@import '../assets/scss/components/portfolio.scss';
 </style>

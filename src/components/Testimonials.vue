@@ -1,9 +1,9 @@
 <template>
-    <section class="section testimonials-area bg-primary position-relative testimonial-bg-shapes">
+    <section class="testimonials-component section bg-primary position-relative">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="section-title text-white mb-5">Testimonials</h2>
+                    <h2 class="section-title display-4 text-white mb-5">Testimonials</h2>
                 </div>
                 <div class="col-lg-10 mx-auto">
                     <VueSlickCarousel
@@ -26,19 +26,19 @@
                                     width="75"
                                 />
                                 <h4 class="text-white">{{ testimonial.node.author }}</h4>
-                                <h6 class="text-light mb-4">{{ testimonial.node.title }}</h6>
+                                <h6 class="text-muted mb-4">{{ testimonial.node.title }}</h6>
                             </a>
                         </div>
                     </VueSlickCarousel>
                 </div>
             </div>
         </div>
-        <g-image src="~/assets/images/backgrounds/map.png" alt="map" class="img-fluid bg-map" />
-        <g-image src="~/assets/images/illustrations/dots-group-v.png" alt="bg-shape" class="img-fluid bg-shape-1" />
-        <g-image src="~/assets/images/illustrations/leaf-orange.png" alt="bg-shape" class="img-fluid bg-shape-2" />
-        <g-image src="~/assets/images/illustrations/dots-group-sm.png" alt="bg-shape" class="img-fluid bg-shape-3" />
-        <g-image src="~/assets/images/illustrations/leaf-pink-round.png" alt="bg-shape" class="img-fluid bg-shape-4" />
-        <g-image src="~/assets/images/illustrations/leaf-cyan.png" alt="bg-shape" class="img-fluid bg-shape-5" />
+        <g-image src="~/assets/images/backgrounds/map.png" alt="map" id="testimonials-bg-map" class="img-fluid position-absolute" />
+        <g-image src="~/assets/images/illustrations/dots-group-v.png" alt="bg-shape" id="testimonials-bg-shape-1" class="img-fluid position-absolute" />
+        <g-image src="~/assets/images/illustrations/leaf-orange.png" alt="bg-shape" id="testimonials-bg-shape-2" class="img-fluid position-absolute" />
+        <g-image src="~/assets/images/illustrations/dots-group-sm.png" alt="bg-shape" id="testimonials-bg-shape-3" class="img-fluid position-absolute" />
+        <g-image src="~/assets/images/illustrations/leaf-pink-round.png" alt="bg-shape" id="testimonials-bg-shape-4" class="img-fluid position-absolute" />
+        <g-image src="~/assets/images/illustrations/leaf-cyan.png" alt="bg-shape" id="testimonials-bg-shape-5" class="img-fluid position-absolute" />
     </section>
 </template>
 
@@ -75,5 +75,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+@import '../assets/scss/components/testimonials.scss';
 </style>

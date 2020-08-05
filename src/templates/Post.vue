@@ -1,6 +1,8 @@
 <template>
     <DefaultLayout>
-        <Header :title="$page.post.title"></Header>
+        <Header>
+            <h1 class="text-white font-tertiary display-5">{{ $page.post.title }}</h1>
+        </Header>
 
         <section class="section">
             <div class="container">

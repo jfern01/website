@@ -1,11 +1,11 @@
 <template>
     <ClientOnly>
         <kinesis-container>
-            <section class="hero-area bg-primary">
+            <section class="hero-component bg-primary">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-11 mx-auto">
-                            <h1 class="text-white font-tertiary">Hi! I’m <br> Jose Fernandez<br> Software Engineer</h1>
+                            <h1 class="text-white font-tertiary display-3">Hi! I’m <br> Jose Fernandez<br> Software Engineer</h1>
                         </div>
                     </div>
                 </div>
@@ -88,5 +88,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+@import '../assets/scss/components/hero.scss';
 </style>

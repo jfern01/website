@@ -1,27 +1,34 @@
-.hover-bg-primary {
-    transition: .3s ease;
+@import '../variables';
+@import 'node_modules/bootstrap/scss/functions';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins';
 
-    &:hover {
-        background: $primary-color;
-
-        * {
-        color: $white;
+.services-component {
+    .hover-bg-primary {
+        transition: .3s ease;
+    
+        &:hover {
+            background: $primary;
+    
+            * {
+                color: $white;
+            }
         }
     }
-}
-
-.active-bg-primary {
-    transition: .3s ease;
-    background: $primary-color;
-
-    * {
-        color: $white;
+    
+    .active-bg-primary {
+        transition: .3s ease;
+        background: $primary;
+    
+        * {
+            color: $white;
+        }
     }
-}
-
-.hover-shadow{
-    transition: .2s ease;
-    &:hover{
-        box-shadow: 0px 18px 40px 8px rgba(224, 241, 255, 0.54) !important;
+    
+    .hover-shadow{
+        transition: .2s ease;
+        &:hover{
+            box-shadow: 0px 18px 40px 8px rgba(224, 241, 255, 0.54) !important;
+        }
     }
 }

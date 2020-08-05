@@ -1,29 +1,40 @@
 <template>
     <DefaultLayout>
-        <section class="page-title-alt bg-primary position-relative">
+        <HeaderAlt>
+            <h1 class="text-white font-tertiary display-3">About me</h1>
+        </HeaderAlt>
+
+        <section class="section pt-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <h1 class="text-white font-tertiary">About Me</h1>
+                    <div class="col-md-8">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.</p>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident.</p>
+                        <p>Deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
+                    </div>
+                    <div class="col-md-4 text-center drag-lg-top">
+                        <div class="shadow-down mb-4">
+                            <!-- <g-image src="~/assets/images/about/jose-fernandez.jpeg" :width="400" alt="author" class="img-fluid w-100 rounded-lg border-thick border-white" /> -->
+                        </div>
+                        <h4>Jose Fernandez</h4>
                     </div>
                 </div>
             </div>
-            <g-image src="~/assets/images/illustrations/leaf-bg-top.png" alt="illustrations" class="bg-shape-1 w-100" />
-            <g-image src="~/assets/images/illustrations/dots-group-sm.png" alt="illustrations" class="bg-shape-2" />
-            <g-image src="~/assets/images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-3" />
-            <g-image src="~/assets/images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4" />
-            <g-image src="~/assets/images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-5" />
-            <g-image src="~/assets/images/illustrations/leaf-cyan-lg.png" alt="illustrations" class="bg-shape-6" />
         </section>
     </DefaultLayout>
 </template>
 
 <script>
-// import Header from '~/components/Header.vue';
+import HeaderAlt from '~/components/HeaderAlt.vue';
 
 export default {
     components: {
-        // Header,
+        HeaderAlt,
     },
     metaInfo: {
         title: 'About me'
@@ -32,46 +43,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.page-title-alt {
-    padding: 350px 0 70px;
 
-    .container {
-        position: relative;
-        z-index: 1;
-    }
-    .bg-shape-1 {
-        position: absolute;
-        left: 0;
-        top: 0;
-    }
-    .bg-shape-2 {
-        position: absolute;
-        left: 70px;
-        top: 100px;
-    }
-    .bg-shape-3 {
-        position: absolute;
-        left: 30%;
-        top: 50px;
-        transform: rotate(180deg);
-    }
-
-    .bg-shape-4{
-        position: absolute;
-        left: 100px;
-        bottom: 100px;
-    }
-
-    .bg-shape-5 {
-        position: absolute;
-        left: 40%;
-        bottom: -25px;
-    }
-
-    .bg-shape-6 {
-        position: absolute;
-        bottom: 100px;
-        right: -100px;
-    }
-}
 </style>

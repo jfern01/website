@@ -11,13 +11,10 @@
                 <BCollapse class="text-center" id="navigation" is-nav>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <g-link class="nav-link" to="/">Home</g-link>
+                            <g-link class="nav-link p-3 font-tertiary text-white text-uppercase" to="/">Home</g-link>
                         </li>
                         <li class="nav-item">
-                            <g-link class="nav-link" to="/about/">About</g-link>
-                        </li>
-                        <li class="nav-item">
-                            <g-link class="nav-link" to="/blog/">Blog</g-link>
+                            <g-link class="nav-link p-3 font-tertiary text-white text-uppercase" to="/blog/">Blog</g-link>
                         </li>
                     </ul>
                 </BCollapse>
@@ -32,27 +29,27 @@
 
         <ContactForm />
 
-        <footer class="bg-dark footer-section">
+        <footer class="footer-section bg-dark">
             <div class="section">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
-                            <h5 class="text-light">Email</h5>
+                            <h5 class="text-muted">Email</h5>
                             <p class="text-white paragraph-lg font-secondary">{{ $static.metadata.email }}</p>
                         </div>
                         <div class="col-md-4">
-                            <h5 class="text-light">Phone</h5>
+                            <h5 class="text-muted">Phone</h5>
                             <p class="text-white paragraph-lg font-secondary">{{ $static.metadata.phone }}</p>
                         </div>
                         <div class="col-md-4">
-                            <h5 class="text-light">Address</h5>
+                            <h5 class="text-muted">Address</h5>
                             <p class="text-white paragraph-lg font-secondary">{{ $static.metadata.address }}</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="border-top text-center border-dark py-5">
-                <p class="mb-0 text-light">Copyright © {{ currentYear }} Jose Fernandez</p>
+            <div class="copyright text-center py-5">
+                <p class="mb-0 text-muted">Copyright © {{ currentYear }} Jose Fernandez</p>
             </div>
         </footer>
     </div>
@@ -106,5 +103,9 @@ export default {
 
 footer {
     padding-top: 200px;
+
+    .copyright {
+        border-top: 1px solid #343a40;
+    }
 }
 </style>

@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2 class="section-title">Latest Posts</h2>
+                    <h2 class="section-title display-4">Latest Posts</h2>
                 </div>
                 <div v-for="post in $static.posts.edges" :key="post.node.id" class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
                     <article class="card shadow">

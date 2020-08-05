@@ -1,9 +1,9 @@
 <template>
-    <section class="section skills-area">
+    <section class="skills-component section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-title">Skills</h2>
+                    <h2 class="section-title display-4">Skills</h2>
                 </div>
             </div>
             <div class="row mb-4" v-for="category in categories" v-bind:key="category.name">
@@ -16,7 +16,7 @@
                             <div class="wave" v-bind:style="{ 'bottom': skill.level + '%' }"></div>
                         </div>
                         <div class="card-footer bg-white">
-                            <h4 class="card-title">{{ skill.name }} ({{ skill.level }}%)</h4>
+                            <h4 class="card-title m-1">{{ skill.name }} ({{ skill.level }}%)</h4>
                         </div>
                     </div>
                 </div>
@@ -164,5 +164,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+@import '../assets/scss/components/skills.scss';
 </style>

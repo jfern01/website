@@ -18,6 +18,9 @@ module.exports = {
         },
         {
             use: '@gridsome/plugin-sitemap',
+            options: {
+                exclude: ['/about'],
+            },
         },
         {
             use: '@gridsome/plugin-critical',

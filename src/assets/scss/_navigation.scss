@@ -2,7 +2,7 @@
     padding: 40px 130px;
     transition: .3s ease;
     &.nav-bg {
-        background-color: $primary-color;
+        background-color: $primary;
         padding: 15px 100px;
         @include media-breakpoint-down(lg) {
             padding: 15px 20px;
@@ -10,23 +10,6 @@
     }
     @include media-breakpoint-down(lg) {
         padding: 20px;
-        background: $primary-color;
+        background: $primary;
     }
-}
-
-.navbar{
-    .nav-item{
-        .nav-link{
-            font-family: $tertiary-font;
-            text-transform: uppercase;
-            padding: 15px;
-        }
-        &.active{
-            font-weight: bold;
-        }
-    }
-}
-
-.navbar-dark .navbar-nav .nav-link{
-    color: $white;
 }
