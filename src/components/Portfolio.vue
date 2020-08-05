@@ -12,7 +12,7 @@
                         <g-image src="~/assets/images/portfolio/danos.png" alt="portfolio-image" class="img-fluid rounded w-100" />
                         <div class="hover-overlay">
                             <div class="hover-content">
-                                <a class="btn btn-light btn-sm" href="https://danosseasoning.com/" target="_blank">view project</a>
+                                <a class="btn btn-light btn-sm" href="https://danosseasoning.com/" target="_blank" rel="noreferrer">view project</a>
                             </div>
                         </div>
                     </div>
@@ -22,7 +22,7 @@
                         <g-image src="~/assets/images/portfolio/optics-owl.png" alt="portfolio-image" class="img-fluid rounded w-100" />
                         <div class="hover-overlay">
                             <div class="hover-content">
-                                <a class="btn btn-light btn-sm" href="https://opticsowl.com" target="_blank">view project</a>
+                                <a class="btn btn-light btn-sm" href="https://opticsowl.com" target="_blank" rel="noreferrer">view project</a>
                             </div>
                         </div>
                     </div>
@@ -32,7 +32,7 @@
                         <g-image src="~/assets/images/portfolio/goodwill.png" alt="portfolio-image" class="img-fluid rounded w-100" />
                         <div class="hover-overlay">
                             <div class="hover-content">
-                                <a class="btn btn-light btn-sm" href="https://www.goodwillky.org/find-a-goodwill-ky-store/" target="_blank">view project</a>
+                                <a class="btn btn-light btn-sm" href="https://www.goodwillky.org/find-a-goodwill-ky-store/" target="_blank" rel="noreferrer">view project</a>
                             </div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                         <g-image src="~/assets/images/portfolio/green-remedy.png" alt="portfolio-image" class="img-fluid rounded w-100" />
                         <div class="hover-overlay">
                             <div class="hover-content">
-                                <a class="btn btn-light btn-sm" href="https://greenremedy.com/" target="_blank">view project</a>
+                                <a class="btn btn-light btn-sm" href="https://greenremedy.com/" target="_blank" rel="noreferrer">view project</a>
                             </div>
                         </div>
                     </div>

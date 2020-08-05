@@ -1,14 +1,14 @@
 <template>
-    <ClientOnly>
-        <kinesis-container>
-            <section class="hero-component bg-primary">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-11 mx-auto">
-                            <h1 class="text-white font-tertiary display-3">Hi! I’m <br> Jose Fernandez<br> Software Engineer</h1>
-                        </div>
-                    </div>
+    <section class="hero-component bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-11 mx-auto">
+                    <h1 class="text-white font-tertiary display-3">Hi! I’m <br> Jose Fernandez<br> Software Engineer</h1>
                 </div>
+            </div>
+        </div>
+        <ClientOnly>
+            <kinesis-container class="position-absolute w-100 h-100" style="top: 0;">
                 <div class="layer-bg w-100">
                     <g-image class="img-fluid w-100" src="~/assets/images/illustrations/leaf-bg.png" alt="bg-shape" />
                 </div>
@@ -52,21 +52,21 @@
                         <g-image src="~/assets/images/illustrations/leaf-cyan-2.png" alt="bg-shape" />
                     </kinesis-element>
                 </div>
-                <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
-                    <li class="mb-3">
-                        <a class="text-white" href="https://github.com/jfern01" target="_blank">
-                            <ThemifyIcon icon="github" />
-                        </a>
-                    </li>
-                    <li class="mb-3">
-                        <a class="text-white" href="https://www.linkedin.com/in/jose-fernandez-89179540/" target="_blank">
-                            <ThemifyIcon icon="linkedin" />
-                        </a>
-                    </li>
-                </ul>
-            </section>
-        </kinesis-container>
-    </ClientOnly>
+            </kinesis-container>
+        </ClientOnly>
+        <ul class="list-unstyled ml-5 mt-3 position-relative zindex-1">
+            <li class="mb-3">
+                <a class="text-white" href="https://github.com/jfern01" target="_blank" rel="noreferrer">
+                    <ThemifyIcon icon="github" />
+                </a>
+            </li>
+            <li class="mb-3">
+                <a class="text-white" href="https://www.linkedin.com/in/jose-fernandez-89179540/" target="_blank" rel="noreferrer">
+                    <ThemifyIcon icon="linkedin" />
+                </a>
+            </li>
+        </ul>
+    </section>
 </template>
 
 <script>

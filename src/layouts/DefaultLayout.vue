@@ -3,7 +3,7 @@
         <header class="navigation fixed-top" v-scroll="handleScroll" :class="{ 'nav-bg': stickyHeader }">
             <nav class="navbar navbar-dark navbar-expand-lg">
                 <g-link class="navbar-brand font-tertiary h3" to="/">
-                    <g-image src="~/assets/images/logo/default.svg" width="65px" />
+                    <g-image src="~/assets/images/logo/default.svg" width="65px" alt="logo" />
                 </g-link>
 
                 <BNavbarToggle target="navigation" />
