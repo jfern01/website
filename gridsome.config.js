@@ -76,6 +76,11 @@ module.exports = {
                 typeName: 'Post',
                 baseDir: './content/posts',
                 path: '*.md',
+                remark: {
+                    plugins: [
+                        '@gridsome/remark-prismjs'
+                    ]
+                }
             }
         },
     ],

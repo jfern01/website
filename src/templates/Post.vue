@@ -46,5 +46,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+@import '../../node_modules/prismjs/themes/prism.css'
 </style>
