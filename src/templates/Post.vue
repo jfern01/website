@@ -39,9 +39,11 @@ export default {
     components: {
         Header,
     },
-    // metaInfo: {
-    //     title: 'Not found'
-    // }
+    metaInfo: function() {
+        return {
+            title: this.$page.post.title,
+        };
+    }
 };
 </script>
 
