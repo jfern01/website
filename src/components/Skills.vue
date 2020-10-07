@@ -59,6 +59,11 @@ export default {
                             color: '#F7E018',
                             level: 90,
                         },
+                        {
+                            name: 'C#',
+                            color: '#9F73D9',
+                            level: 30,
+                        },
                     ],
                 },
                 {
@@ -134,6 +139,11 @@ export default {
                             color: '#00D1B2',
                             level: 85,
                         },
+                        {
+                            name: '.NET',
+                            color: '#5D09E9',
+                            level: 40,
+                        },
                     ],
                 },
                 {
@@ -153,6 +163,11 @@ export default {
                             name: 'Sylius',
                             color: '#0FBF9C',
                             level: 60,
+                        },
+                        {
+                            name: 'ASP.NET',
+                            color: '#5D09E9',
+                            level: 50,
                         },
                     ],
                 },
